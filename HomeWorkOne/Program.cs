@@ -47,12 +47,14 @@ namespace HomeWorkOne
             Console.WriteLine("Ваше имя: " + name + " Фамилия: " + secName + " Возраст: " + age + " Рост: " + height + " Вес: " + weight);
             Console.WriteLine("Ваше имя {0}, Фамилия {1}, Возраст {2}, Рост {3}, Вес {4}", name, secName, age, height, weight);
             Console.WriteLine($"Ваше имя {name}, Фамилия {secName}, Возраст {age}, Рост {height}, Вес {weight}");
+            MainClass.Pause();
 
             //Ввести вес и рост человека. Рассчитать и вывести индекс массы тела (ИМТ) по формуле I=m/(h*h); где m — масса тела в килограммах, h — рост в метрах.
 
             Console.WriteLine("Вычисление индекса массы тела\n");
             double imt = weight / (Math.Pow(height, 2));
             Console.WriteLine($"Индекс массы тела = {imt:F}");
+            MainClass.Pause();
 
             // Написать программу, которая подсчитывает расстояние между точками с координатами x1, y1 и x2,y2 по формуле r=Math.Sqrt(Math.Pow(x2-x1,2)+Math.Pow(y2-y1,2)).
             // Вывести результат, используя спецификатор формата .2f (с двумя знаками после запятой);
@@ -68,6 +70,7 @@ namespace HomeWorkOne
             var y2 = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine($"Расстояние между точками = {Distance(x1,x2,y1,y2):F}");
+            MainClass.Pause();
 
             // Написать программу обмена значениями двух переменных:
             // а) с использованием третьей переменной;
@@ -75,20 +78,23 @@ namespace HomeWorkOne
 
             int a1 = 5;
             int b1 = 7;
+            Console.WriteLine($"До a = {a1}, b = {b1}");
             int c = b1;
             b1 = a1;
             a1 = c;
-            Console.WriteLine($"a1 = {a1}, b1 = {b1}");
+            Console.WriteLine($"После a = {a1}, b = {b1}\n");
 
 
             // б) *без использования третьей переменной.
             int a = 10;
             int b = 15;
+            Console.WriteLine($"До a = {a}, b = {b}");
             a = a + b;
             b = a - b;
             a = a - b;
 
-            Console.WriteLine($"a = {a}, b = {b}");
+            Console.WriteLine($"После a = {a}, b = {b}");
+            MainClass.Pause();
 
             // а) Написать программу, которая выводит на экран ваше имя, фамилию и город проживания.
             // б) *Сделать задание, только вывод организовать в центре экрана.

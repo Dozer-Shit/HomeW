@@ -4,8 +4,9 @@ namespace HomeWorkOne
 {
     public class MainClass
     {
-        static void Pause()
+        public static void Pause()
         {
+            Console.WriteLine("\nДля продолжения нажмите любую клавишу");
             Console.ReadKey();
         }
 
