@@ -20,7 +20,7 @@ namespace HomeWorkOne
             Console.SetCursorPosition(Console.WindowWidth / 2, Console.WindowHeight / 2);
             Console.WriteLine(msg);
         }
-        
+
         public static void Main(string[] args)
         {
             // Написать программу «Анкета». Последовательно задаются вопросы (имя, фамилия, возраст, рост, вес). В результате вся информация выводится в одну строчку:
@@ -39,13 +39,15 @@ namespace HomeWorkOne
 
             Console.WriteLine("Введите ваш вес");
             var weight = double.Parse(Console.ReadLine());
-  
+
             // а) используя  склеивание;
             // б) используя форматированный вывод;
             // в) используя вывод со знаком $.
-            
-            Console.WriteLine("Ваше имя: " + name + " Фамилия: " + secName + " Возраст: " + age + " Рост: " + height + " Вес: " + weight);
-            Console.WriteLine("Ваше имя {0}, Фамилия {1}, Возраст {2}, Рост {3}, Вес {4}", name, secName, age, height, weight);
+
+            Console.WriteLine("Ваше имя: " + name + " Фамилия: " + secName + " Возраст: " + age + " Рост: " + height +
+                              " Вес: " + weight);
+            Console.WriteLine("Ваше имя {0}, Фамилия {1}, Возраст {2}, Рост {3}, Вес {4}", name, secName, age, height,
+                weight);
             Console.WriteLine($"Ваше имя {name}, Фамилия {secName}, Возраст {age}, Рост {height}, Вес {weight}");
             MainClass.Pause();
 
@@ -64,12 +66,12 @@ namespace HomeWorkOne
             Console.WriteLine("Координаты первой точки:\nX и Y\n");
             var x1 = Convert.ToDouble(Console.ReadLine());
             var x2 = Convert.ToDouble(Console.ReadLine());
-            
+
             Console.WriteLine("Координаты второй точки:\nX и Y\r");
             var y1 = Convert.ToDouble(Console.ReadLine());
             var y2 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine($"Расстояние между точками = {Distance(x1,x2,y1,y2):F}");
+            Console.WriteLine($"Расстояние между точками = {Distance(x1, x2, y1, y2):F}");
             MainClass.Pause();
 
             // Написать программу обмена значениями двух переменных:
