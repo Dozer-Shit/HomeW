@@ -18,7 +18,7 @@ namespace HomeWorkOne
         public static int Rand()
         {
             Random ran = new Random();
-            var randInt = ran.Next(0, 1000);
+            var randInt = ran.Next(0, 100);
             return randInt;
         }
     }
