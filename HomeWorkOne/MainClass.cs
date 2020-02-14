@@ -2,8 +2,9 @@ using System;
 
 namespace HomeWorkOne
 {
-    public class MainClass
+    public static class MainClass
     {
+        // *Создать класс с методами, которые могут пригодиться в вашей учебе (Print, Pause).
         public static void Pause()
         {
             Console.WriteLine("\nДля продолжения нажмите любую клавишу");
