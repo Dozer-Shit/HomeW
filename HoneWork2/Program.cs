@@ -94,7 +94,7 @@ namespace HomeWorkTwo
             }
 
             var bim = BIM(weight, height);
-            if (bim < 20 && bim > 18)
+            if (bim < 20 && bim > 10)
             {
                 PrintBIM("недостаток веса", bim);
             }
@@ -110,6 +110,11 @@ namespace HomeWorkTwo
             {
                 Console.WriteLine(
                     $"Индекс массы вашего тела = {bim:F1} это означает, что пора выбирать для себя ящик и пошире");
+            }
+            else if (bim < 10)
+            {
+                Console.WriteLine(
+                    $"Индекс массы вашего тела = {bim:F1} а я и не знал, что нежить существует");
             }
             else
             {
