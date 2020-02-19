@@ -97,14 +97,19 @@ namespace HomeWorkTwo
             if (bim < 20 && bim > 10)
             {
                 PrintBIM("недостаток веса", bim);
+                Recommendation(weight,height,bim);
             }
             else if (bim > 20 && bim < 25)
             {
                 PrintBIM("показатели в норме", bim);
+                Recommendation(weight,height,bim);
+
             }
             else if (bim > 25 && bim < 30)
             {
                 PrintBIM("избыточный вес", bim);
+                Recommendation(weight,height,bim);
+
             }
             else if (bim > 30)
             {

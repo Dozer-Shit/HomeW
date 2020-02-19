@@ -53,6 +53,37 @@ namespace HomeWorkTwo
             return bim;
         }
 
+        // Распределение рекомендаций относительно роста
+        public static void Recommendation(double weight, double height, double bim)
+        {
+            if (height > 1.44d && height < 1.60d)
+            {
+                Usl(50, bim, weight);
+            }
+            else if (height > 1.60d && height < 1.81d)
+            {
+                Usl(60, bim, weight);
+            }
+            else if (height > 1.80d && height < 2.05d)
+            {
+                Usl(80, bim, weight);
+            }
+        }
+
+        // Сама рекомендация
+        private static void Usl(int num, double bim, double weight)
+        {
+            Console.WriteLine($"Для вас оптимальным весом будет {num} Кг");
+            if (bim > 24)
+            {
+                Console.WriteLine($"Вам необходимо сбросить {weight - num} Кг");
+            }
+            else if (bim < 19)
+            {
+                Console.WriteLine($"Вам необходимо набрать {num - weight} Кг");
+            }
+        }
+
         // Проверка на число
         public static void ParseNum(bool pars, out double param)
         {
