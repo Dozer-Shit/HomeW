@@ -1,8 +1,8 @@
 using System;
 
-namespace HomeWorkTwo
+namespace HoneWork2
 {
-    public class ProjectMethods
+    public static class ProjectMethods
     {
         // Написать метод, возвращающий минимальное из трёх чисел.
         public static double MinNumber(double a, double b, double c)
@@ -70,7 +70,7 @@ namespace HomeWorkTwo
             }
         }
 
-        // Сама рекомендация
+        // Тело рекомендации для индекса массы тела
         private static void Usl(int num, double bim, double weight)
         {
             Console.WriteLine($"Для вас оптимальным весом будет {num} Кг");
@@ -97,7 +97,7 @@ namespace HomeWorkTwo
             param = value;
         }
 
-        // Рекурсивный метод вывода чисел от a до b (Не включая a и b)
+        // Рекурсивный метод вывода чисел от a до b (Не включая конечные a и b)
         public static void Recursion(int a, int b)
         {
             if (a == b - 1)
@@ -125,7 +125,7 @@ namespace HomeWorkTwo
             return Recursion(a, b, c);
         }
 
-        // Сумма числа
+        // Сумма числа для подсчета Хороших чисел
         public static int Sum(int num)
         {
             int counter = 0;

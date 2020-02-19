@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using static HomeWorkTwo.ProjectMethods;
+using static HoneWork2.ProjectMethods;
 
 
 namespace HomeWorkTwo
@@ -78,7 +78,7 @@ namespace HomeWorkTwo
             Console.WriteLine("Теперь мы узнаем, в норме ли ваш вес\nВведите ваш рост (в метрах) :");
             double height;
             double weight;
-            bool hInput = double.TryParse(Console.ReadLine().Replace(".",","), out height);
+            bool hInput = double.TryParse(Console.ReadLine().Replace(".", ","), out height);
 
             if (hInput == false)
             {
@@ -97,19 +97,16 @@ namespace HomeWorkTwo
             if (bim < 20 && bim > 10)
             {
                 PrintBIM("недостаток веса", bim);
-                Recommendation(weight,height,bim);
+                Recommendation(weight, height, bim);
             }
             else if (bim > 20 && bim < 25)
             {
                 PrintBIM("показатели в норме", bim);
-                Recommendation(weight,height,bim);
-
             }
             else if (bim > 25 && bim < 30)
             {
                 PrintBIM("избыточный вес", bim);
-                Recommendation(weight,height,bim);
-
+                Recommendation(weight, height, bim);
             }
             else if (bim > 30)
             {
