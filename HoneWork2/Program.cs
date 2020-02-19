@@ -1,25 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading;
+using static HomeWorkTwo.ProjectMethods;
 
 
 namespace HomeWorkTwo
 {
     internal class Program
     {
-        
+        // Минимальное из 3 чисел
         public static void Main(string[] args)
         {
             Console.WriteLine("Введите 3 числа\n");
             var num1 = double.Parse(Console.ReadLine());
             var num2 = double.Parse(Console.ReadLine());
             var num3 = double.Parse(Console.ReadLine());
-            Console.WriteLine($"Минимальное число - {ProjectMethods.MinNumber(num1, num2, num3)}");
+            Console.WriteLine($"Минимальное число - {MinNumber(num1, num2, num3)}");
 
             Console.WriteLine("Введите число для подсчета цифр в нем");
             var num4 = long.Parse(Console.ReadLine());
 
-            Console.WriteLine($"Кол-во цифр в числе - {ProjectMethods.NumCount(num4)}");
+            Console.WriteLine($"Кол-во цифр в числе - {NumCount(num4)}");
 
             // С клавиатуры вводятся числа, пока не будет введен 0. Подсчитать сумму всех нечетных положительных чисел.
             Console.WriteLine("Введите числа для подсчета суммы нечетных, 0 останавливает ввод");
@@ -47,10 +47,6 @@ namespace HomeWorkTwo
                 {
                     numbers.Add(num);
                 }
-                else
-                {
-                    Console.WriteLine("Можно вводить только положительные числа");
-                }
             } while (num != 0);
 
             for (int i = 0; i < numbers.Count; i++)
@@ -68,12 +64,13 @@ namespace HomeWorkTwo
             Console.WriteLine("Программа эмуляции авторизации.\n\nУстановите ваш логин и затем пароль");
             string login = Console.ReadLine();
             string password = Console.ReadLine();
-            Console.WriteLine("Отлично ! Ваши данные сохранены\nТеперь вам необходимо авторизоваться\nВведите ваши логин и пароль");
+            Console.WriteLine(
+                "Отлично ! Ваши данные сохранены\nТеперь вам необходимо авторизоваться\nВведите ваши логин и пароль");
 
             string loginAnsw = "";
             string passwordnAnsw = "";
             int counter = 3;
-            ProjectMethods.CheckUser(password, passwordnAnsw, login, loginAnsw, counter);
+            CheckUser(password, passwordnAnsw, login, loginAnsw, counter);
 
             // а) Написать программу, которая запрашивает массу и рост человека, вычисляет его индекс массы и сообщает, нужно ли человеку похудеть, набрать вес или все в норме;
             // б) *Рассчитать, на сколько кг похудеть или сколько кг набрать для нормализации веса.
@@ -81,11 +78,11 @@ namespace HomeWorkTwo
             Console.WriteLine("Теперь мы узнаем, в норме ли ваш вес\nВведите ваш рост (в метрах) :");
             double height;
             double weight;
-            bool hInput = double.TryParse(Console.ReadLine(), out height);
+            bool hInput = double.TryParse(Console.ReadLine().Replace(".",","), out height);
 
             if (hInput == false)
             {
-                ProjectMethods.ParseNum(hInput, out height);
+                ParseNum(hInput, out height);
             }
 
             Console.WriteLine("Теперь вес :");
@@ -93,21 +90,21 @@ namespace HomeWorkTwo
 
             if (hInput == false)
             {
-                ProjectMethods.ParseNum(wInput, out weight);
+                ParseNum(wInput, out weight);
             }
 
-            var bim = ProjectMethods.BIM(weight, height);
+            var bim = BIM(weight, height);
             if (bim < 20 && bim > 18)
             {
-                ProjectMethods.PrintBIM("недостаток веса", bim);
+                PrintBIM("недостаток веса", bim);
             }
             else if (bim > 20 && bim < 25)
             {
-                ProjectMethods.PrintBIM("показатели в норме", bim);
+                PrintBIM("показатели в норме", bim);
             }
             else if (bim > 25 && bim < 30)
             {
-                ProjectMethods.PrintBIM("избыточный вес", bim);
+                PrintBIM("избыточный вес", bim);
             }
             else if (bim > 30)
             {
@@ -122,23 +119,28 @@ namespace HomeWorkTwo
             // a) Разработать рекурсивный метод, который выводит на экран числа от a до b (a<b);
             // б) *Разработать рекурсивный метод, который считает сумму чисел от a до b.
 
+            Console.WriteLine("Выводим все числа от a до b\nВведите число a");
             int a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Теперь b");
             int b = int.Parse(Console.ReadLine());
             int cout = 0;
             Console.WriteLine("Вывод всех чисел от а до б");
-            ProjectMethods.Recursion(a, b);
-            Console.WriteLine($"Сумма чисел от а до б {ProjectMethods.Recursion(a, b, cout)}");
+            Recursion(a, b);
+            Console.WriteLine($"Сумма чисел от а до б {Recursion(a, b, cout)}");
 
             // *Написать программу подсчета количества «Хороших» чисел в диапазоне от 1 до 1 000 000 000.
             // Хорошим называется число, которое делится на сумму своих цифр.
             // Реализовать подсчет времени выполнения программы, используя структуру DateTime.
 
+            Console.WriteLine(
+                "Подсчитаем Хорошие числа, для продолжения нажмите любую кнопку (Подсчет чисел может занять некоторые время)");
+            Console.ReadLine();
             DateTime start = DateTime.Now;
             var goodNum = new List<long>();
 
-            for (int i = 2014; i < 1000000000; i++)
+            for (int i = 1; i < 1000000000; i++)
             {
-                if (i % ProjectMethods.Sum(i) == 0)
+                if (i % Sum(i) == 0)
                 {
                     goodNum.Add(i);
                 }
@@ -146,7 +148,5 @@ namespace HomeWorkTwo
 
             Console.WriteLine($"Хороших чисел - {goodNum.Count}\nПодсчитано за {DateTime.Now - start}");
         }
-
-        
     }
 }
