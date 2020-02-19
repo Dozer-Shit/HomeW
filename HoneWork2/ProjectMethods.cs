@@ -46,7 +46,7 @@ namespace HomeWorkTwo
             Console.WriteLine($"Индекс массы вашего тела = {bim:F1} это означает, что у вас {text}");
         }
 
-        //Подсчет индекса массы
+        //Подсчет индекса массы тела
         public static double BIM(double weight, double height)
         {
             double bim = weight / (Math.Pow(height, 2));
