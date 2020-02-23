@@ -2,7 +2,7 @@ using System;
 
 namespace HomeWork3
 {
-    // Описание класса дробей с исключением в set
+    // Описание класса дробей с исключением в Denominator set
     public class Fraction
     {
         private int _numerator;

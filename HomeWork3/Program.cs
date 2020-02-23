@@ -44,7 +44,6 @@ struct Complex
 
 class ComplexCl
 {
-    // Все методы и поля публичные. Мы можем получить доступ к ним из другого класса.
     public double im;
     public double re;
 
