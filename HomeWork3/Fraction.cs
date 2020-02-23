@@ -84,6 +84,7 @@ namespace HomeWork3
                 }
             }
 
+            // Перенос знака из знаменателя в числитель
             if (fraction.Denominator < 0)
             {
                 fraction.Numerator = -1 * fraction.Numerator;

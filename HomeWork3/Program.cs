@@ -108,11 +108,11 @@ namespace HomeWork3
 
 
             Complex result = complex1.Plus(complex2);
-            Console.WriteLine(result.ToStr());
-            result = complex1.Multi(complex2);
-            Console.WriteLine(result.ToStr());
+            Console.WriteLine($"Сложение: {result.ToStr()}");
             result = complex1.Substuct(complex2);
-            Console.WriteLine(result.ToStr());
+            Console.WriteLine($"Умножение: {result.ToStr()}");
+            result = complex1.Multi(complex2);
+            Console.WriteLine($"Вычетание: {result.ToStr()}");
 
             // б) Дописать класс Complex, добавив методы вычитания и произведения чисел. Проверить работу класса;
 
@@ -123,12 +123,12 @@ namespace HomeWork3
             ComplexCl complex4 = new ComplexCl {re = 2, im = 2};
 
             ComplexCl results = complex3.PlusCl(complex4);
-            Console.WriteLine(results.ToStri());
+            Console.WriteLine($"Сложение: {results.ToStri()}");
             results = complex3.SubstuctCl(complex4);
-            Console.WriteLine(results.ToStri());
+            Console.WriteLine($"Вычетание: {results.ToStri()}");
             results = complex3.MultiCl(complex4);
-            Console.WriteLine(results.ToStri());
-
+            Console.WriteLine($"Умножение: {results.ToStri()}");
+            
             //а) С клавиатуры вводятся числа, пока не будет введен 0 (каждое число в новой строке).
             //Требуется подсчитать сумму всех нечетных положительных чисел. Сами числа и сумму вывести на экран, используя tryParse;
             //б) Добавить обработку исключительных ситуаций на то, что могут быть введены некорректные данные.
