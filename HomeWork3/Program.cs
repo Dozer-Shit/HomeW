@@ -136,7 +136,7 @@ namespace HomeWork3
 
             Console.WriteLine("Программа подсчета суммы всех нечетных положительных чисел");
             Console.WriteLine("Введите числа для подсчета суммы нечетных, 0 останавливает ввод\n");
-            var num = 0;
+            int num;
             var sum = 0;
             string allNums = "";
             List<int> numbers = new List<int>();
