@@ -89,7 +89,7 @@ namespace HomeWork4
 
         public static void MaxNum()
         {
-            Дописываю )
+            //Дописываю )
         }
     }
 }
