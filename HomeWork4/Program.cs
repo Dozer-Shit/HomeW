@@ -104,7 +104,7 @@ namespace HomeWork4
             //метод, возвращающий номер максимального элемента массива (через параметры, используя модификатор ref или out)
 
             Console.WriteLine("\nДемонстрация двумерного массива");
-            RankArray array = new RankArray(3, 5);
+            RankArray array = new RankArray(10, 15);
             RankArray.RankSum(array.ArrRank);
             RankArray.RankSumMoreThan(array.ArrRank, 50);
             Console.WriteLine($"\nМинимальное число в массиве {array.MinElem}");
