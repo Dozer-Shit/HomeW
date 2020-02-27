@@ -2,7 +2,7 @@ using System;
 
 namespace HomeWork3
 {
-    // Описание класса дробей с исключением в set
+    // Описание класса дробей с исключением в Denominator set
     public class Fraction
     {
         private int _numerator;
@@ -84,6 +84,7 @@ namespace HomeWork3
                 }
             }
 
+            // Перенос знака из знаменателя в числитель
             if (fraction.Denominator < 0)
             {
                 fraction.Numerator = -1 * fraction.Numerator;
