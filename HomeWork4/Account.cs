@@ -1,6 +1,8 @@
 using System;
 using System.IO;
 
+// Сделано
+
 namespace HomeWork4
 {
     struct Account

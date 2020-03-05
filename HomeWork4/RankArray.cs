@@ -64,7 +64,6 @@ namespace HomeWork4
 
                 return min;
             }
-
         }
 
         public int MaxElem
@@ -87,9 +86,23 @@ namespace HomeWork4
             }
         }
 
-        public static void MaxNum()
+        public static void MaxNum(int[,] arr, out int[] MaxNum)
         {
-            
+            int max = arr[0, 0];
+
+            MaxNum = new int[2];
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                {
+                    if (arr[i, j] > max)
+                    {
+                        max = arr[i, j];
+                        MaxNum[0] = i + 1;
+                        MaxNum[1] = j + 1;
+                    }
+                }
+            }
         }
     }
 }

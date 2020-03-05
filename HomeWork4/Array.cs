@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 
+// Сделано
 namespace HomeWork4
 {
     class MyArray

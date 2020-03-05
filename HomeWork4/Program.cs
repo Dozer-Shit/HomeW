@@ -1,5 +1,7 @@
 ﻿using System;
 
+// Сделано
+
 namespace HomeWork4
 {
     internal static class Program
@@ -107,7 +109,9 @@ namespace HomeWork4
             RankArray.RankSumMoreThan(array.ArrRank, 50);
             Console.WriteLine($"\nМинимальное число в массиве {array.MinElem}");
             Console.WriteLine($"Минимальное число в массиве {array.MaxElem}");
-            
+            int[] MaxNum;
+            RankArray.MaxNum(array.ArrRank, out MaxNum);
+            Console.WriteLine($"{MaxNum[0]} {MaxNum[1]}");
         }
     }
 }
