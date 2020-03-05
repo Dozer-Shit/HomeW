@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-
+// Для пулл реквеста
 namespace HomeWork6
 {
     class Student

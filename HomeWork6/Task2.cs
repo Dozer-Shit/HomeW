@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
-
+// Для пулл реквеста
 namespace HomeWork6
 {
     public class Task2

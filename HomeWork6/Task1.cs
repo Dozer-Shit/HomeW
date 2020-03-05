@@ -1,5 +1,5 @@
 using System;
-
+// Для пулл реквеста
 namespace HomeWork6
 {
     public class Task1

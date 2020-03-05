@@ -4,7 +4,7 @@ using System.IO;
 using static HomeWork6.Task1;
 using static HomeWork6.Task2;
 using static HomeWork6.Student;
-
+// Для пулл реквеста
 namespace HomeWork6
 {
     public delegate double Fun(double x, double a);
