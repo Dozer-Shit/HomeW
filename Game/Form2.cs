@@ -2,6 +2,8 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
+// Для реквеста
+
 namespace Game
 {
     public partial class Form2 : Form
