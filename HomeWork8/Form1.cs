@@ -2,6 +2,7 @@
 using System.IO;
 using System.Windows.Forms;
 
+// Задача 3
 namespace HomeWork8
 {
     public partial class Form1 : Form
