@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game", "Game\Game.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWork8", "HomeWork8\HomeWork8.csproj", "{C1C54783-DDEA-4602-9AA5-88B97999A801}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms_Lesson1", "Algorithms_Lesson1\Algorithms_Lesson1.csproj", "{10EF4CC8-B67C-4FC1-A480-9FB454C32B2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{C1C54783-DDEA-4602-9AA5-88B97999A801}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1C54783-DDEA-4602-9AA5-88B97999A801}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1C54783-DDEA-4602-9AA5-88B97999A801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10EF4CC8-B67C-4FC1-A480-9FB454C32B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10EF4CC8-B67C-4FC1-A480-9FB454C32B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10EF4CC8-B67C-4FC1-A480-9FB454C32B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10EF4CC8-B67C-4FC1-A480-9FB454C32B2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
