@@ -1,6 +1,6 @@
 ﻿using System;
 
-// Исполнитель Шитов Евгений
+// Шитов Евгений
 namespace Algorithms_Lesson1
 {
     internal class Program
