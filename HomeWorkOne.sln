@@ -18,6 +18,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms_Lesson1", "Algor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms_Lesson2", "Algorithms_Lesson2\Algorithms_Lesson2.csproj", "{9ECCFDCF-E4A6-465A-B620-86EC25908EB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms_Lesson3", "Algorithms_Lesson3\Algorithms_Lesson3.csproj", "{761501F4-794F-4E4D-A8D6-7C1683A12E51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms_Lesson4", "Algorithms_Lesson4\Algorithms_Lesson4.csproj", "{4FCDD2A1-9B4A-4438-95C2-073207FEDAB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,5 +64,13 @@ Global
 		{9ECCFDCF-E4A6-465A-B620-86EC25908EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ECCFDCF-E4A6-465A-B620-86EC25908EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ECCFDCF-E4A6-465A-B620-86EC25908EB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{761501F4-794F-4E4D-A8D6-7C1683A12E51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{761501F4-794F-4E4D-A8D6-7C1683A12E51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{761501F4-794F-4E4D-A8D6-7C1683A12E51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{761501F4-794F-4E4D-A8D6-7C1683A12E51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FCDD2A1-9B4A-4438-95C2-073207FEDAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FCDD2A1-9B4A-4438-95C2-073207FEDAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FCDD2A1-9B4A-4438-95C2-073207FEDAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FCDD2A1-9B4A-4438-95C2-073207FEDAB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
