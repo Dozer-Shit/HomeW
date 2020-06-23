@@ -1,6 +1,6 @@
 ﻿using System;
 
-// Шитов Евгений HW
+// Шитов Евгений
 namespace Algorithms_Lesson1
 {
     internal class Program
