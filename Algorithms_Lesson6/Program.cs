@@ -1,6 +1,7 @@
 ﻿using System;
 
 // Шитов Евгений
+
 namespace Algorithms_Lesson6
 {
     internal static class Program
