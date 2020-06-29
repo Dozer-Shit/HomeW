@@ -1,5 +1,6 @@
 ﻿using System;
 
+// Шитов Евгений
 namespace Algorithms_Lesson6
 {
     internal static class Program
@@ -7,7 +8,7 @@ namespace Algorithms_Lesson6
         // обход дерева различными способами
         public static void Main()
         {
-            BinaryTree<int> Tree = new BinaryTree<int>();
+            BinaryTree<int> tree = new BinaryTree<int>();
 
             Random rand = new Random();
 
@@ -15,23 +16,23 @@ namespace Algorithms_Lesson6
             {
                 int value = rand.Next(100);
                 Console.WriteLine($"Adding {value}");
-                Tree.Add(value);
+                tree.Add(value);
             }
 
-            Console.WriteLine($"Number of nodes is {Tree.Count}");
-            Console.WriteLine($"Max value is {Tree.MaxVal}");
-            Console.WriteLine($"Min value is {Tree.MinVal}");
+            Console.WriteLine($"Number of nodes is {tree.Count}");
+            Console.WriteLine($"Max value is {tree.MaxVal}");
+            Console.WriteLine($"Min value is {tree.MinVal}");
             Console.WriteLine("Preorder traversal:");
-            Console.WriteLine(string.Join(" ", Tree.Preorder()));
+            Console.WriteLine(string.Join(" ", tree.Preorder()));
             Console.WriteLine("Inorder traversal:");
-            Console.WriteLine(string.Join(" ", Tree.Inorder()));
+            Console.WriteLine(string.Join(" ", tree.Inorder()));
             Console.WriteLine("Postorder traversal:");
-            Console.WriteLine(string.Join(" ", Tree.Postorder()));
+            Console.WriteLine(string.Join(" ", tree.Postorder()));
             Console.WriteLine("Levelorder traversal:");
-            Console.WriteLine(string.Join(" ", Tree.Levelorder()));
+            Console.WriteLine(string.Join(" ", tree.Levelorder()));
             Console.WriteLine("Default traversal (inorder):");
 
-            foreach (int n in Tree)
+            foreach (int n in tree)
             {
                 Console.Write("{0} ", n);
             }
