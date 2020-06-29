@@ -5,7 +5,7 @@ namespace Algorithms_Lesson6
 {
     internal static class Program
     {
-        // обход дерева различными способами
+        // Обход дерева различными способами
         public static void Main()
         {
             BinaryTree<int> tree = new BinaryTree<int>();
@@ -40,7 +40,7 @@ namespace Algorithms_Lesson6
             Console.WriteLine();
             Console.ReadKey(true);
 
-            // сумма кодов символов
+            // Сумма кодов символов
             var str = "abc";
             int result = 0;
             for (int i = 0; i < str.Length; ++i)
