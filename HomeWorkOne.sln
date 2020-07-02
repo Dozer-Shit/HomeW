@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms_Lesson5", "Algor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms_Lesson6", "Algorithms_Lesson6\Algorithms_Lesson6.csproj", "{3D04FD31-9250-428B-AF1C-8759F8B40E28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms_Lesson7", "Algorithms_Lesson7\Algorithms_Lesson7.csproj", "{1B110980-EFAA-4E10-A11B-DD1A07815743}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,5 +86,9 @@ Global
 		{3D04FD31-9250-428B-AF1C-8759F8B40E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D04FD31-9250-428B-AF1C-8759F8B40E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D04FD31-9250-428B-AF1C-8759F8B40E28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B110980-EFAA-4E10-A11B-DD1A07815743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B110980-EFAA-4E10-A11B-DD1A07815743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B110980-EFAA-4E10-A11B-DD1A07815743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B110980-EFAA-4E10-A11B-DD1A07815743}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
