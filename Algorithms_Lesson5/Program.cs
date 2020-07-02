@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+// Шитов Евгений
 namespace Algorithms_Lesson5
 {
     internal static class Program
