@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 // Шитов Евгений
+
 namespace Algorithms_Lesson6
 {
     public class BinaryTree<T> : ICollection<T>
